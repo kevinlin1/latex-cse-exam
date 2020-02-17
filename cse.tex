@@ -1,0 +1,78 @@
+\documentclass{cse}
+% \printanswers
+
+% Exam solution display
+\newcommand{\name}{Kevin Lin}
+\newcommand{\sid}{1234567890}
+\newcommand{\nameleft}{Kevin Lin}
+\newcommand{\nameright}{Kevin Lin}
+
+% Course information
+\newcommand{\coursenumber}{CSE Course}
+\newcommand{\coursetitle}{Course Title}
+\newcommand{\offering}{University of Washington, Quarter Year}
+\title{Sample Exam}
+
+\begin{document}
+
+\maketitle
+
+This exam has \numquestions{} questions worth a total of \numpoints{} points and is to be completed in 50 minutes.
+Two double-sided, 8.5-by-11'' sheets of notes are permitted.
+Electronic devices are prohibited.
+This exam is preprocessed by a computer when grading, so please \textbf{write darkly and write your answers inside the designated spaces.}
+
+\textbf{Write the statement below in the given blank and sign. You may do this before the exam begins.}
+
+\begin{quote}
+    ``I have neither given nor received any assistance in the taking of this exam.''
+\end{quote}
+
+\fillin[I have neither given nor received any assistance in the taking of this exam.][\textwidth]
+
+\begin{flushright}
+    Signature: \fillin[\name][2in]
+\end{flushright}
+
+\medskip
+
+\begin{minipage}[t]{2.25in}
+\gradetablestretch{1.265}
+\vtword{\textbf{Total}}
+\begin{center}
+\pointtable[v][questions]
+\end{center}
+\end{minipage}%
+\begin{minipage}[t]{3.75in}
+\renewcommand{\arraystretch}{2.235}
+\begin{tabularx}{\textwidth}{|X|m{2in - 2\tabcolsep}|}
+\hline
+Name & \solinline{\name} \\
+\hline
+Student ID & \solinline{\sid} \\
+\hline
+Name of person to left & \solinline{\nameleft} \\
+\hline
+Name of person to right & \solinline{\nameright} \\
+\hline
+\end{tabularx}
+\end{minipage}
+
+\medskip
+
+\begin{itemize}[itemsep=0pt]
+\item Take notes in any white space. \textbf{Only answers written in the designated spaces will be graded.}
+\item \mcqb{} indicates that only one circle may be chosen. Fill-in the shape completely: \mcqs{}.
+\item \moqb{}\, indicates that more than one box may be selected. Fill-in the shape completely: \moqs{}.
+\item Work through the problems you are comfortable with first.
+\item Not all information provided in a problem may be useful.
+\item Unless we specifically give you the option, the correct answer is not, `does not compile.'
+\end{itemize}
+
+\clearpage
+
+\begin{questions}
+\question[1] \questiontitle{Hello, world!}
+\end{questions}
+
+\end{document}
